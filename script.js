@@ -29,3 +29,13 @@ if (foodBtn) {
     console.log("Fetch food API will go here");
   });
 }
+
+// Wait for page load
+document.addEventListener("DOMContentLoaded", function () {
+
+    // Button interaction
+    document.getElementById("welcome-btn").addEventListener("click", function () {
+        alert("Welcome to Campus Life Super App!");
+    });
+
+});

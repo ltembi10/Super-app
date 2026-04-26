@@ -1,14 +1,34 @@
-/* Custom styles */
-
+/* General Styling */
 body {
-  background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
 }
 
-h1 {
-  color: #333;
+/* Improve spacing */
+h1, h2 {
+    color: #333;
 }
 
-.nav-link {
-  display: inline-block;
-  margin-left: 10px;
+/* API cards */
+#api-results img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+/* Tablet */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .navbar-brand {
+        font-size: 1rem;
+    }
 }
