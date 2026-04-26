@@ -1,0 +1,17 @@
+<h1>API Data</h1>
+
+<div class="container">
+  <div class="row">
+    {% for item in api_data %}
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="{{ item[1] }}" class="card-img-top" alt="GIF image">
+          <div class="card-body">
+            <h5 class="card-title">{{ item[0] }}</h5>
+            <p class="card-text">Source: {{ item[2] }}</p>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
